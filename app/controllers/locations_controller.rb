@@ -20,6 +20,8 @@ class LocationsController < ApplicationController
 
     respond_to do |format|
       if @location.save
+        # TODO: this is where it makes the API call
+
         format.html { redirect_to @location, notice: 'Location was successfully created.' }
         format.json { render action: 'show', status: :created, location: @location }
       else
