@@ -17,11 +17,8 @@ class LocationsController < ApplicationController
 
   def create
     @location = Location.new(location_params)
-
     respond_to do |format|
       if @location.save
-        # TODO: this is where it makes the API call
-
         format.html { redirect_to @location, notice: 'Location was successfully created.' }
         format.json { render action: 'show', status: :created, location: @location }
       else

@@ -3,6 +3,7 @@ class Location < ActiveRecord::Base
   after_validation :geocode
   reverse_geocoded_by :latitude, :longitude
   after_validation :reverse_geocode
+  before_save :map
 
   def map
 
