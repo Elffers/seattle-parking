@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'geocoder'
 gem 'httparty'
+gem "twitter-bootstrap-rails"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
