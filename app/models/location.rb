@@ -8,4 +8,6 @@ class Location < ActiveRecord::Base
   def map
 
   end
+
+
 end

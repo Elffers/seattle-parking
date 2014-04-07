@@ -12,6 +12,7 @@ gem 'httparty'
 gem 'twitter-bootstrap-rails'
 gem 'gmaps4rails'
 gem 'underscore-rails'
+gem 'agent_orange'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
