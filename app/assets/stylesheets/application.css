@@ -11,6 +11,11 @@
  *= require_self
  *= require_tree .
  */
+/*
+colors from background:
+dark:#282832
+medium: #292C35
+light:#30333C*/
 
 body {
   background-image: url("background.gif");
@@ -18,14 +23,33 @@ body {
 }
 
 .content {
-  width: 60%;
+  width: 75%;
   margin: auto;
   background-color: #f8f8f8;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #282832;
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
+
+.btn-primary {
+  color: white;
+  background-color: #292C35;
+  border-color: #282832;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #282832;
+  border-color: #282832;
+}
+
+a:visited {
+  color: white;
+ }
