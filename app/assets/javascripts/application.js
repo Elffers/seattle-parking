@@ -16,3 +16,25 @@
 //= require_tree .
 //= require underscore
 //= require gmaps/google
+
+$(document).ready(function() {
+  $("#find-parking").click(function() {
+
+    var bbox = $("");
+    var center = $("");
+
+    $.ajax({
+      url: "http://localhost:3000",
+      type: 'POST',
+      dataType: 'json',
+      data: {map_data: {center: center, bbox: bbox, map_width: 500, map_height: 400 }},
+      success: function(data, textStatus, xhr) {
+        // get url and then do stuff
+      },
+      error: function(xhr, textStatus, errorThrown) {
+        alert("There was a problem finding parking.");
+      }
+    });
+    return false;
+  });
+});
