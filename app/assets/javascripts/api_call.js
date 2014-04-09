@@ -1,9 +1,8 @@
-
 $(document).ready(function() {
   $("#find-parking").click(function() {
 
     var bbox = "1";
-    var center = "2";
+    var center = document.getElementById('lat-longs').innerHTML;
     var map_size = "500,400";
 
     $.ajax({
@@ -21,3 +20,4 @@ $(document).ready(function() {
     return false;
   });
 });
+

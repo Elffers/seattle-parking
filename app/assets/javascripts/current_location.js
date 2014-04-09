@@ -14,8 +14,8 @@
     {
       if(geoPosition.init())
       {
-        document.getElementById('current').innerHTML="Receiving...";
-        geoPosition.getCurrentPosition(showPosition,function(){document.getElementById('current').innerHTML="Couldn't get location"},{enableHighAccuracy:true});
+        document.getElementById('current').innerHTML="Loading...";
+        geoPosition.getCurrentPosition(showPosition,function(){document.getElementById('current').innerHTML="Couldn't get location; try reloading the page"},{enableHighAccuracy:true});
       }
       else
       {
@@ -27,8 +27,9 @@
     {
       var latitude = parseFloat( p.coords.latitude );
       var longitude = parseFloat( p.coords.longitude );
-      document.getElementById('current').innerHTML="latitude=" + latitude + " longitude=" + longitude;
-      var pos=new google.maps.LatLng( latitude , longitude);
+      document.getElementById('current').innerHTML="Your coordinates are " + latitude + ", " + longitude;
+      document.getElementById('lat-longs').innerHTML= latitude + "," + longitude;
+      var pos = new google.maps.LatLng( latitude , longitude);
       map.setCenter(pos);
       map.setZoom(16);
 

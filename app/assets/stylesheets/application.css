@@ -62,7 +62,9 @@ a:visited {
  }
 
 
-
  #map_canvas{
   margin: auto;
  }
+#lat-longs {
+  display: none;
+}
