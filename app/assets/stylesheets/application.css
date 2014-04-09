@@ -23,7 +23,7 @@ body {
 }
 
 .content {
-  width: 75%;
+  width: 60%;
   margin: auto;
   background-color: #f8f8f8;
   -webkit-border-radius: 4px;
@@ -35,7 +35,8 @@ body {
 }
 
 #inner-contents {
-  width:70%;
+  width:100%;
+  text-align: center;
   margin: auto;
 }
 
@@ -58,4 +59,8 @@ body {
 
 a:visited {
   color: #f8f8f8;
+ }
+
+ #map_canvas{
+  margin: auto;
  }
