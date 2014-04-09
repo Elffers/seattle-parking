@@ -58,8 +58,10 @@ body {
 
 
 a:visited {
-  color: #f8f8f8;
+  color: black;
  }
+
+
 
  #map_canvas{
   margin: auto;
