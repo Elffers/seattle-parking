@@ -1,5 +1,3 @@
-
-//
 // javascript-mobile-desktop-geolocation
 // https://github.com/estebanav/javascript-mobile-desktop-geolocation
 //
